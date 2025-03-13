@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(73, 145, 121);
+}
+
+.container{
+    height:400px;
+    width: 250px;
+    background: paleturquoise;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.container i{
+    color: #fff;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0); /* ekdom majha majhi ananr jonno r scale(0)korar karone love ta image er majh khane ase but dekha jasse na */
+    opacity: 0;
+    transition: transform ease 0.4s;
+    
+}
